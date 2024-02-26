@@ -1,0 +1,772 @@
+body {
+    margin: 0;
+    font-family: "Spinnaker", sans-serif;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-weight: 400;
+    /* Normal weight */
+    font-style: normal;
+    /* Normal style */
+    background-image: url('./img/page-bg-1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+
+
+.act-3-main-cont {
+    /* background-color: aliceblue; */
+    /* background-image: url('./page-bg-1.jpg'); */
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    width: 100vw;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 100px;
+
+}
+
+.left-div {
+
+    /* width: 24%; */
+    height: 800px;
+    width: 360px;
+    /* background-color: rgb(1, 154, 225); */
+    background-color: white;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    list-style: none;
+    padding: 25px;
+    gap: 28px;
+
+}
+
+.left-div .info-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.left-div .info-1 .profile-img{
+  height: 240px;
+  width: 240px;
+  border: 5px solid whitesmoke;
+  border-radius: 14px;
+}
+ 
+               
+
+.left-div .info-1 h1 {
+    font-size: 25px;
+
+}
+
+.left-div .info-1 span {
+    background-color: whitesmoke;
+    border-radius: 8px;
+    color: black;
+    padding: 8px 18px;
+
+}
+
+.redir-links {
+    all: unset;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+#redir-link-fb-logo {
+    color: #1773ea;
+}
+
+#redir-link-twitter-logo {
+    color: #1c9cea;
+}
+
+#redir-link-ig-logo {
+    color: #e12a72;
+}
+
+#redir-link-in-logo {
+    color: #144679;
+}
+
+
+.info-2 #phone {
+    color: deeppink;
+}
+.info-2 #email {
+    color: skyblue;
+}
+
+.info-2 #gps {
+    color: salmon;
+}
+.info-2 #calendar {
+    color: violet;
+}
+
+
+
+
+
+
+.redir-links li i {
+    background-color: whitesmoke;
+    height: 40px;
+    width: 40px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+
+
+.redir-links li i:hover {
+    /* background-color: -webkit-linear-gradient(97deg, rgb(250, 82, 82) 0%, rgb(221, 36, 118) 100%);
+    background-color: linear-gradient(97deg, rgb(250, 82, 82) 0%, rgb(221, 36, 118) 100%); */
+
+    background: linear-gradient(97deg, rgb(250, 82, 82) 0%, rgb(221, 36, 118) 100%);
+    color: white !important;
+}
+
+
+
+.left-div .info-2 {
+    border-radius: 12px;
+    background-color: whitesmoke;
+    width: 100%;
+}
+
+
+.left-div .info-2 ul {
+    list-style: none;
+}
+
+.left-div .info-2 ul li {
+
+    margin-right: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 0px;
+    gap: 8px;
+
+}
+.left-div .info-2 ul li:not(:first-child) {
+    border-top: 1px solid gainsboro;
+
+}
+
+.left-div .info-2 ul li i {
+    background-color: white;
+    height: 44px;
+    width: 44px;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 44px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.right-div {
+    width: 750px;
+
+    /* flex: 50%; */
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+}
+
+.right-div .education {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.right-div .education .header {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    /* background-color: red; */
+    padding-left: 25px;
+    color: salmon;
+    white-space: nowrap;
+}
+
+.right-div .education .header span {
+    position: relative;
+    left: 50px;
+    display: block;
+    width: 150px;
+    height: 3px;
+    background-color: salmon;
+}
+
+.right-div .education .item-1 {
+    padding: 15px;
+    margin-left: 50px;
+    border-radius: 12px;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    background-color: lavenderblush;
+    color: #555;
+}
+
+.right-div .education .item-1 span {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.right-div .education .item-2 {
+    padding: 15px;
+    margin-left: 50px;
+    border-radius: 12px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    color: #555;
+}
+
+.right-div .education .item-2 span {
+    font-size: larger;
+    font-weight: bold;
+}
+
+
+
+.right-div .education .skills-container {
+    background-color: ghostwhite;
+    margin: -20px;
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.education .skills-container .item-cont {
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+
+.education .skills-container .item-cont div span {
+
+    position: absolute;
+    left: 300px !important;
+    /* left: 280px; */
+}
+
+.skills-container .progress-bar-1 {
+    background-color: #edf2f2;
+    display: flex;
+    height: 6px;
+    overflow: hidden;
+    border-radius: 12px;
+
+}
+
+.skills-container .progress-bar-1 i {
+    background-color: lime;
+    width: 80%;
+}
+
+.skills-container .progress-bar-1 .bar1{
+    background-color: yellow;
+    width: 60%; 
+} 
+.skills-container .progress-bar-1 .bar2{
+    background-color: darkorange;
+    width: 90%; 
+} 
+.skills-container .progress-bar-1 .bar3{
+    background-color: lightblue;
+    width: 80%;  }
+
+.skills-container .progress-bar-1 .bar4{
+    background-color:rgb(235, 18, 221);
+    width: 70%; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.right-div .contacts {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.right-div .contacts .header {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    /* background-color: red; */
+    padding-left: 25px;
+    color: salmon;
+    /* white-space: nowrap; */
+
+}
+
+.right-div .contacts .header span {
+    position: relative;
+    left: 50px;
+    display: block;
+    width: 150px;
+    height: 3px;
+    background-color: salmon;
+}
+
+.right-div .body {
+    /* background-color: orange; */
+    background-color: ghostwhite;
+    padding: 15px;
+    border-radius: 12px;
+    margin: 25px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.right-div .body .header {
+
+    display: flex;
+    color: orangered;
+    flex-direction: column;
+}
+
+.right-div .body button {
+    all: unset;
+
+    /* text-align: center; */
+    padding: 10px 25px;
+    width: min-content;
+    border: 1px solid dimgray;
+    color: #555;
+    border-radius: 12px;
+}
+
+.right-div .body .input-div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.right-div .body .input-div .label-1 {
+    color: salmon;
+}
+
+.right-div .body .input-div .label-2 {
+    color: cornflowerblue;
+}
+
+.right-div .body .input-div .label-2 {
+    color: violet;
+}
+
+
+
+
+.right-div .body .input-div input {
+    all: unset;
+    padding: 5px;
+    border-bottom: 2px solid lightgray;
+    /* border-radius: 12px;
+    border: 1px solid lightgray; */
+
+}
+
+
+
+.right-div .body .input-div .input-1:focus {
+    border-color: salmon;
+
+}
+
+.right-div .body .input-div .input-2:focus {
+    border-color: cornflowerblue;
+
+}
+
+.right-div .body .input-div .input-3:focus {
+    border-color: violet;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.right-div .about {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.right-div .about .header {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    /* background-color: red; */
+    padding-left: 25px;
+    white-space: nowrap;
+    color: salmon;
+
+}
+ 
+.right-div .about .header span {
+    position: relative;
+    left: 50px;
+    display: block;
+    width: 150px;
+    height: 3px;
+    background-color: salmon;
+}
+
+.right-div .about .item-1 {
+    padding: 15px;
+    margin-left: 50px;
+    border-radius: 12px;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    background-color: lavenderblush;
+    color: #555;
+}
+
+.right-div .about .item-1 span {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.right-div .about .item-2 {
+    padding: 15px;
+    margin-left: 50px;
+    border-radius: 12px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    color: #555;
+}
+
+.right-div .about .item-2 span {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.right-div .about .desc {
+    padding-left: 25px;
+    color: dimgray;
+
+}
+
+.right-div .about .header2 {
+    padding-left: 25px;
+
+}
+
+
+
+
+
+
+
+
+
+.right-div .work {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.right-div .work .header {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    /* background-color: red; */
+    padding-left: 25px;
+    color: salmon;
+    white-space: nowrap;
+}
+
+.right-div .work .header span {
+    position: relative;
+    left: 50px;
+    display: block;
+    width: 150px;
+    height: 3px;
+    background-color: salmon;
+}
+
+.right-div .work .item-1 {
+    padding: 15px;
+    margin-left: 50px;
+    border-radius: 12px;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    background-color: lavenderblush;
+    color: #555;
+}
+
+.right-div .work .item-1 span {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.right-div .work .item-2 {
+    padding: 15px;
+    margin-left: 50px;
+    border-radius: 12px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    color: #555;
+}
+
+.right-div .work .item-2 span {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.right-div .work .desc {
+    padding-left: 25px;
+    color: dimgray;
+
+}
+
+.right-div .work .header2 {
+    padding-left: 25px;
+
+}
+
+.right-div .body div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.right-div .body div img {
+    height: 150px;
+    width: 250px;
+}
+
+
+
+
+
+
+
+
+
+.right-div .top {
+    margin-left: auto;
+
+
+}
+
+.right-div .top .nav-cont {
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    gap: 10px;
+    border-radius: 10px;
+    color: #555;
+
+}
+
+
+.right-div .top .nav-cont div {
+    background-color: whitesmoke;
+    border-radius: 10px;
+
+
+}
+
+.right-div .top .nav-cont div a {
+    all: unset;
+    display: block;
+    padding: 10px 15px;
+
+
+
+}
+
+@media screen and (max-width: 874px) {
+    .act-3-main-cont {
+
+        flex-direction: column !important;
+        align-items: center;
+
+
+    }
+
+    .left-div {
+
+
+        width: 70%;
+
+
+    }
+
+    .right-div {
+        width: 80%;
+
+
+    }
+
+    .right-div .top {
+        margin-left: unset;
+
+
+
+    }
+
+    .right-div .top .nav-cont {
+        justify-content: center;
+        align-items: center;
+        transform: scale(1.2);
+
+    }
+
+    .right-div .top .nav-cont div a {
+
+        padding: unset !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+
+
+    }
+
+
+    .right-div .about .header span {
+
+        left: 10px;
+
+        width: 70px;
+
+    }
+
+    .right-div .education .header span {
+
+        left: 10px;
+
+        width: 70px;
+
+    }
+
+    .right-div .contacts .header span {
+
+        left: 10px;
+
+        width: 70px;
+
+    }
+
+    .right-div .works .header span {
+
+        left: 10px;
+
+        width: 70px;
+
+    }
+
+      .education .skills-container .item-cont {
+
+        margin:unset;
+        left:45%;
+        transform: translateX(-50%);
+    }
+
+
+    .education .skills-container .item-cont {
+        margin-top: 20px;
+        margin-left: 30px;
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+    }
+
+    .education .skills-container .item-cont div span {
+
+        position: absolute;
+        left: 220px !important;
+        /* left: 280px; */
+    }
+}

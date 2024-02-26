@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta information for character set and viewport settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the document -->
+    <title>Cyrus Personal WebPage</title>
+    <!-- Link to an external stylesheet (act3.css) -->
+    <link rel="stylesheet" type="text/css" href="./act3.css">
+    <!-- Link to Font Awesome icon library using local and CDN references -->
+    <link rel="stylesheet" href="../fontawesome-free-6.5.1-web/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="..." crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- Main container with class "act-3-main-cont" -->
+    <div class="act-3-main-cont">
+
+        <!-- Left division containing personal information -->
+        <div class="left-div">
+
+            <!-- First information section with profile image, name, and social links -->
+            <div class="info-1">
+                <img class="profile-img" src='./img/profile.jpg' alt="img">
+                <h1>Cyrus Carbungco</h1>
+                <span>Student</span>
+                <ul class="redir-links">
+                    <!-- Social links represented by list items -->
+             <li  > <a href="https://web.facebook.com/cyrus.umali.1"> <i id="redir-link-fb-logo" class="fab fa-facebook-f"></i></a>    </li> 
+                    <li> <a href="https://twitter.com/ayusfly"><i id="redir-link-twitter-logo" class="fab fa-twitter"></i> </a>  </li>
+                    <li>  <a href="https://www.instagram.com/umalic65/?hl=en"><i id="redir-link-ig-logo" class="fab fa-instagram"></i></a></li>
+                    <li> <a href="https://www.linkedin.com/login"><i id="redir-link-in-logo" class="fab fa-linkedin-in"></i> </a> </li>
+                </ul>
+            </div>
+
+            <!-- Second information section with details like phone, email, location, and birthday -->
+            <div class="info-2">
+                <ul>
+                    <!-- Each list item contains an icon and details -->
+                    <li>
+                        <div> <i id="phone" class="fa-solid fa-mobile-phone"></i> </div>
+                        <div>
+                            <label>Phone </label>
+                            <p>+639762917562</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div> <i id="email" class="fa-regular fa-envelope-open"></i> </div>
+                        <div>
+                            <label>Email</label>
+                            <p>umalic65@gmail.com</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div> <i id="gps" class="fa-solid fa-location-dot"></i></div>
+                        <div>
+                            <label>Location</label>
+                            <p>Rizal, Laguna</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div> <i id="calendar" class="fa-regular fa-calendar"></i> </div>
+                        <div>
+                            <label>Birthday</label>
+                            <p>07-31-2003</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Right division containing navigation and content section -->
+        <div class="right-div">
+
+            <!-- Top section with navigation links -->
+            <div class="top">
+                <div class="nav-cont">
+                    <!-- Navigation links with icons and associated JavaScript functions -->
+                    <div onclick="setActive(this)">
+                        <a href="about.html" onclick="loadPage('about.html')"> <i class="fa-solid fa-address-card"></i>
+                            About</a>
+                    </div>
+                    <div onclick="setActive(this)"> <a href="educ.html" onclick="loadPage('educ.html')">
+                            <i class="fa-solid fa-user"></i>
+                            Education</a></div>
+                    <div onclick="setActive(this)"> <a href="work.html" onclick="loadPage('work.html')">
+                            <i class="fa-solid fa-briefcase"></i>
+                            Works</a></div>
+                    <div onclick="setActive(this)"> <a href="contacts.html" onclick="loadPage('contacts.html')">
+                            <i class="fa-solid fa-address-book"></i>
+                            Contacts</a></div>
+                </div>
+            </div>
+
+            <!-- Section to display content from loaded pages -->
+            <section class="right-section" id="content">
+                <!-- Content from loaded pages will appear here -->
+            </section>
+
+        </div>
+
+        <!-- JavaScript section for dynamically loading content and setting active navigation -->
+        <script>
+            function loadPage(page) {
+                // Fetching content from the specified page
+                fetch(page)
+                    .then(response => response.text())
+                    .then(html => {
+                        // Displaying the fetched content in the designated section
+                        document.getElementById('content').innerHTML = html;
+                        // Uncomment the line below if you want to use browser history
+                        // history.pushState({ page: page }, " ", page);
+                    })
+                    .catch(error => console.error('Error loading page:', error));
+
+                event.preventDefault(); // Prevent the default anchor tag behavior
+            }
+
+            // Function to set the active navigation link and style
+            var activeNav;
+            function setActive(navClick) {
+                var allDivs = document.querySelectorAll('div');
+                allDivs.forEach(function (div) {
+                    div.style.background = '';
+                    div.style.color = '';
+                });
+
+                navClick.style.background = 'linear-gradient(97deg, rgb(250, 82, 82) 0%, rgb(221, 36, 118) 100%)';
+                navClick.style.color = 'white';
+                console.log('Hurray');
+            }
+        </script>
+
+    </div>
+
+</body>
+
+</html>
